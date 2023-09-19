@@ -33,7 +33,7 @@ class EventListener implements Listener{
 		$this->sendUpdate($player);
 	}
 
-	public function onGroupChange(PPRankChangedEvent $event){
+	public function onGroupChange(PPGroupChangedEvent $event){
 		$player = $event->getPlayer();
 
 		if(!$player instanceof Player || !$player->isOnline()){
